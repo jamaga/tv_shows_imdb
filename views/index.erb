@@ -1,0 +1,22 @@
+<h1> rate the series!!! </h1>
+
+<form action='/add' method="POST">
+	TV show title: <input type="text" name="name" style="margin: 10px" />
+	your rating: <input type="text" name="rating" style="margin: 10px" />
+	your comment: <input type="text" name="comment" style="margin: 10px" />
+	<input type ="submit" value="Submit" />
+</form>
+
+<%= @shows.length %>
+<%= @shows %>
+<% @shows.each do |one_show| %>
+
+<!-- 	<%= one_show.class %> <br>		
+	<%= one_show.name.class %> <br>
+	<%= one_show.own_rating.class %> <br>
+	<%= one_show.own_comments.class %> <br> -->
+	<%= one_show.name %> <br>
+	<%= one_show.own_rating %> <br>
+	<%= one_show.own_comments %> <br>
+	<%= @shows %>
+<% end %>
